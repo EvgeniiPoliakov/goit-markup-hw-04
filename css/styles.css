@@ -165,26 +165,16 @@ a {
   letter-spacing: 0.03em;
 }
 
-.mainbusiness .item::before {
-  content: "";
-  display: block;
+.icon-details {
   height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
 }
-.icon-details::before {
-  background-image: url(../images/icons.svg/Group\ 1.svg);
-}
-.icon-punctual::before {
-  background-image: url(../images/icons.svg/Group\ 2.svg);
-}
-.icon-planning::before {
-  background-image: url(../images/icons.svg/Group\ 3.svg);
-}
-.icon-technology::before {
-  background-image: url(../images/icons.svg/Group\ 4.svg);
+.mainbusiness-icon {
+  align-items: center;
+  justify-content: center;
 }
 
 /* aboutus */
@@ -281,7 +271,6 @@ a {
 }
 
 /* section clients */
-
 .clients-list {
   display: flex;
   justify-content: center;
@@ -302,7 +291,6 @@ a {
   justify-content: center;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
-  padding: 16px 32px;
 }
 .clients-icon {
   fill: #afb1b8;
@@ -349,10 +337,10 @@ a {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-social {
   margin-left: 70px;
-  margin-top: 12px;
 }
 .footer-socials {
   margin-top: 20px;
@@ -407,6 +395,8 @@ a {
   color: #000000;
 }
 .header-contacts {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -430,6 +420,18 @@ a {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/icons.svg/headerimg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-tittle {
   margin-top: 0;
@@ -452,21 +454,6 @@ a {
   cursor: pointer;
   border-radius: 4px;
   padding: 10px 32px;
-}
-
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/icons.svg/headerimg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 /* portfolio */
